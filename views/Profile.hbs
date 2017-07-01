@@ -1,0 +1,104 @@
+<html>
+<head>
+
+  <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DesignX</title>
+    
+    <!-- Bootstrap CSS -->   
+    <link rel="stylesheet"
+	href="../public/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    
+    <!-- font awesome css -->
+    <link rel="stylesheet"
+	href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- project css -->
+    <link rel="stylesheet" href="../public/css/footer.css">
+  
+</head>
+<body>
+
+	<div class="container" style="width: 1000px; resize: none;">
+
+		<div class="row mt-3 justify-content-center page-header page-heading">
+			<h1>Profile</h1>
+		</div>
+
+		<div class="row mt-5 ml-1" style="height: 500px;width: 800px;">
+			<div class="card" style="height: 100%;width: 300px; border: 0;">
+
+				<img class="card-img-top rounded-circle mt-2" src="../public/img/bird.jpg"
+					alt="profile image" style="height: 50%;width: 300px">
+					 <a href="#" data-toggle="modal"
+					data-target="#upload" class="text-center"><small>+ edit
+						image</small></a>
+				<div class="card-block">
+					<h4 class="card-title">Card title</h4>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary mb-5">Go somewhere</a>
+				</div>
+			</div>
+
+			<div class="ml-5 mt-1">
+
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item"><a class="nav-link active"
+						href="#profile" role="tab" data-toggle="tab">profile</a></li>
+					<li class="nav-item"><a class="nav-link" href="#buzz"
+						role="tab" data-toggle="tab">buzz</a></li>
+					<li class="nav-item"><a class="nav-link" href="#references"
+						role="tab" data-toggle="tab">references</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="profile">...</div>
+					<div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
+					<div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="modal fade" id="upload" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<h4 class="modal-title">Upload</h4>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" action="" enctype="multipart/form-data">
+							<input type="file" name="file" size="60"> <input
+								type="submit" value="Upload">
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+	
+	 <footer class="footer">
+                <p class="text-center pt-3">© NeedKnowledge</p>
+        </footer>
+	
+   <!-- jQuery first, then Bootstrap JS. -->	
+   <script src="../public/js/jquery.js"></script>
+   <script src="../public/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
