@@ -17,3 +17,15 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
 }
+
+.align-error{
+	color: red;
+	height: 10px;
+	margin-left: 40%;
+}
+
+.align-success{
+	color: green;
+	height: 10px;
+	margin-left: 30%;
+}

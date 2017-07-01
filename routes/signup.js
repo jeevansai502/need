@@ -28,13 +28,10 @@ var userSchema = new Schema({
 
 /* POST signup page */
 router.post('/',function(req,res,next){
-console.log("ST");
 	next();
 });
 
 router.use('/',function(req,res){
-
-console.log("S");
 	
 	console.log(req.body);
 	
@@ -54,26 +51,21 @@ console.log("S");
 	result = new RegExp("[a-zA-Z0-9]{6,40}").test(name);
 	
 	if(result == false){
-		console.log("A");
 		res.send("false");
 	}else{
 		result = new RegExp("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}").test(email);
 		
 		if(result == false){
-		console.log("B");
 			res.send("false");
 		}else{
 			result = new RegExp("(?=.*\\d+)(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[@#$%]+)[a-zA-Z0-9@#$%]{8,20}").test(password);
 	
 			if(result == false){
-			console.log("C");
 				res.send("false");
 			}else{
 				if(password != confirm_password){
-				console.log("D");
 					res.send("false");
 				}else{
-				console.log("E");
 					res.send("true");	
 				}
 			}
