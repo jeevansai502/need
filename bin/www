@@ -9,6 +9,7 @@ var debug = require('debug')('need:server');
 var https = require('https');
 var fs = require('fs');
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 
 /**
  * Get port from environment and store in Express.
@@ -87,7 +88,7 @@ function onError(error) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-
+ 
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
@@ -100,14 +101,5 @@ function onListening() {
  * Database connect
  */
  
-mongoose.connect('mongodb://localhost/knowledge');
-
-
-
-
-
-
-
-
-
+mongoose.createConnection('mongodb://localhost/knowledge');
 

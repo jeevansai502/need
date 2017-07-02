@@ -8,16 +8,18 @@
   "dependencies": {
     "bcrypt": "^1.0.2",
     "bindings": "^1.2.1",
+    "bluebird": "^3.5.0",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
+    "email-verification": "^0.4.6",
     "express": "~4.15.2",
     "hbs": "~4.0.1",
     "helmet": "^3.6.1",
-    "mongoose": "^4.10.8",
+    "mongoose": "^4.11.0",
     "morgan": "~1.8.1",
     "node-gyp": "^3.6.2",
     "serve-favicon": "~2.4.2"
   },
-  "author": "Team@needKnowledge",
+  "author": "Team@needKnowledge"
 }

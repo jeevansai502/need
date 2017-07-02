@@ -38,14 +38,14 @@ $('#button_submit').click(function(event){
 		data: $("#signup_form").serialize(),
 		success: function(result){
 			
-			if(result == "false"){
+			if(result.validation == "false"){
 		
-				$('#alert_div').text(" Please enter valid details ");
+				$('#alert_div').text(result.message);
 				$('#alert_div').addClass("align-error");
 			
-			}else if(result == "true"){
+			}else if(result.validation == "true"){
 				
-				$('#alert_div').text(" Signup successful check your mailbox to validate your account ");
+				$('#alert_div').text(result.message);
 				$('#alert_div').addClass("align-success");
 		
 			}	
